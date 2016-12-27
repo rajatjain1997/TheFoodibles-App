@@ -36,20 +36,24 @@ public class MenuFragment extends Fragment {
         mRecyclerView = (RecyclerView) inflater.inflate(R.layout.fragment_menu, container, false);
         mLayoutManager= new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
-//        switch (time_pos) {
-//            case 0:
-//                populate(Item.breakfast);
-//                break;
-//            case 1:
-//                populate(Item.lunch);
-//                break;
-//            case 2:
-//                populate(Item.dinner);
-//                break;
-//            case 3:
-//                populate(Item.bulk);
-//                break;
-//        }
+        switch (time_pos) {
+            case 0:
+                populate(Item.breakfast);
+                getActivity().setTitle("Breakfast");
+                break;
+            case 1:
+                populate(Item.lunch);
+                getActivity().setTitle("Lunch");
+                break;
+            case 2:
+                populate(Item.dinner);
+                getActivity().setTitle("Dinner");
+                break;
+            case 3:
+                populate(Item.bulk);
+                getActivity().setTitle("Bulk Orders");
+                break;
+        }
         //Mock Item allocation right now. The real one is above ^
         items = new Item[10];
         for(int i=0;i<10;i++) {

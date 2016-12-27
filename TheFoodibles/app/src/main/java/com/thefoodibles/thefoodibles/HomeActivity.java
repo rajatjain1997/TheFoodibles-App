@@ -134,7 +134,7 @@ public class HomeActivity extends AppCompatActivity
             ft.replace(R.id.content_frame, fragment, "visible_fragment");
             ft.addToBackStack(null);
             ft.commit();
-            setactionbartitle(0);
+            setactionbartitle(2);
         }
 
 //        } else if (id == R.id.nav_slideshow) {
@@ -157,11 +157,14 @@ public class HomeActivity extends AppCompatActivity
         if(position==0) {
             title = "TheFoodibles";
             navigationView.setCheckedItem(R.id.nav_home);
-        } else if(position == R.id.user_fragment){
+        } else if(position == 1){
             title="Profile";
             navigationView.setCheckedItem(R.id.nav_profile);
+        } else if(position == 2) {
+            title = "Pending Orders";
+            navigationView.setCheckedItem(R.id.nav_pendingorders);
         }
-        //getActionBar().setTitle(title);
+        setTitle(title);
     }
 
 

@@ -14,10 +14,10 @@ public class Item {
     private String image;
     private String category;
     private String time;
-    public static ArrayList<Item> breakfast;
-    public static ArrayList<Item> lunch;
-    public static ArrayList<Item> dinner;
-    public static ArrayList<Item> bulk;
+    public final static ArrayList<Item> breakfast = new ArrayList<>();
+    public final static ArrayList<Item> lunch = new ArrayList<>();
+    public final static ArrayList<Item> dinner = new ArrayList<>();
+    public final static ArrayList<Item> bulk = new ArrayList<>();
 
     public Item() {
         name = "Rajma Chawal";
