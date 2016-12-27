@@ -1,0 +1,48 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thefoodibles.thefoodibles.CartFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Your Order"
+        android:gravity="center_horizontal"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_items">
+
+    </FrameLayout>
+</LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order!"
+        android:id="@+id/cart_order"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_cost"
+        android:gravity="center_horizontal"
+        android:textAlignment="viewEnd"
+        android:textColor="@android:color/holo_green_light"
+        android:text="Final amount"
+        android:layout_above="@+id/cart_order"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="16dp"
+        android:textStyle="normal|bold" />
+</RelativeLayout>

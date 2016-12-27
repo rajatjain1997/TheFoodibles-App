@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thefoodibles.thefoodibles.TopFragment"
+    android:id="@+id/top_fragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="564dp">
+        <TextView
+            android:id="@+id/orderhere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_centerHorizontal="true"
+            android:text="Order here!"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <Button
+            android:id="@+id/homebreakfast"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderhere"
+            android:layout_centerHorizontal="true"
+            android:text="Breakfast"
+            android:onClick="breakfast"/>
+        <Button
+            android:id="@+id/homelunch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/homebreakfast"
+            android:layout_centerHorizontal="true"
+            android:text="Lunch"
+            android:onClick="lunch"/>
+        <Button
+            android:id="@+id/homedinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/homelunch"
+            android:layout_centerHorizontal="true"
+            android:text="Dinner"
+            android:onClick="dinner"/>
+        <Button
+            android:id="@+id/homebulk"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/homedinner"
+            android:layout_centerHorizontal="true"
+            android:text="Bulk Order"
+            android:onClick="bulk"/>
+    </RelativeLayout>
+</FrameLayout>

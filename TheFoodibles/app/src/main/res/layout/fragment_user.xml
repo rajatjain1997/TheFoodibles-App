@@ -1,0 +1,97 @@
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:autofit="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".UserFragment"
+        android:id="@+id/user_fragment"
+        android:layout_marginTop="70dp">
+
+        <ImageView
+            android:layout_width="192dp"
+            android:layout_height="192dp"
+            autofit:srcCompat="@android:drawable/ic_menu_info_details"
+            android:id="@+id/userprofilepic"
+            autofit:layout_constraintLeft_toLeftOf="@+id/user_fragment"
+            android:layout_marginStart="16dp"
+            autofit:layout_constraintTop_toTopOf="@+id/user_fragment"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userusername"
+            android:textStyle="bold|italic"
+            android:typeface="serif"
+            autofit:layout_constraintLeft_toRightOf="@+id/userprofilepic"
+            autofit:layout_constraintTop_toTopOf="@+id/userprofilepic"
+            android:layout_marginTop="24dp"
+            autofit:layout_constraintRight_toRightOf="@+id/user_fragment"
+            android:layout_marginEnd="16dp"
+            autofit:layout_constraintHorizontal_bias="0.45" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/useremail"
+            android:textIsSelectable="false"
+            android:textStyle="italic"
+            autofit:layout_constraintTop_toBottomOf="@+id/userusername"
+            autofit:layout_constraintRight_toRightOf="@+id/user_fragment"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/userprimaryaddress"
+            android:id="@+id/textView6"
+            autofit:layout_constraintLeft_toLeftOf="@+id/user_fragment"
+            android:layout_marginStart="16dp"
+            autofit:layout_constraintTop_toBottomOf="@+id/userprofilepic"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/useraddress1"
+            autofit:layout_constraintLeft_toRightOf="@+id/textView6"
+            android:layout_marginStart="8dp"
+            autofit:layout_constraintTop_toTopOf="@+id/textView6"
+            autofit:layout_constraintRight_toRightOf="@+id/user_fragment"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:textStyle="bold"
+            android:text="@string/usersecondaryaddress"
+            autofit:layout_constraintLeft_toLeftOf="@+id/textView6"
+            autofit:layout_constraintTop_toBottomOf="@+id/textView6"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/useraddress2"
+            autofit:layout_constraintLeft_toRightOf="@+id/textView8"
+            android:layout_marginStart="8dp"
+            autofit:layout_constraintTop_toTopOf="@+id/textView8"
+            autofit:layout_constraintRight_toRightOf="@+id/user_fragment"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/usereditprompt"
+            autofit:layout_constraintLeft_toLeftOf="@+id/user_fragment"
+            android:layout_marginStart="16dp"
+            autofit:layout_constraintRight_toRightOf="@+id/user_fragment"
+            android:layout_marginEnd="16dp"
+            autofit:layout_constraintBottom_toBottomOf="@+id/user_fragment"
+            android:layout_marginBottom="16dp" />
+    </android.support.constraint.ConstraintLayout>
